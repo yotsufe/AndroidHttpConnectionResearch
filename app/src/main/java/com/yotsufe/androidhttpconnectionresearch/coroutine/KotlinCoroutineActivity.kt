@@ -27,6 +27,13 @@ class KotlinCoroutineActivity : AppCompatActivity() {
 
     private fun initViews() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        binding.btnGet.setOnClickListener {
+        }
+
+        binding.btnClear.setOnClickListener {
+            binding.result.text = ""
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
